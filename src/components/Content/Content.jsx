@@ -17,7 +17,16 @@ export const Content = ({ data }) => {
           >
             {data.short}
           </a>
-          <div className='' onClick={copy}>
+          <div
+            style={{
+              cursor: 'pointer',
+              border: '1px solid black',
+              borderRadius: '50px',
+              margin: '2px',
+              padding: '10px',
+            }}
+            onClick={copy}
+          >
             Copy short link
           </div>
         </td>
